@@ -1,0 +1,546 @@
+<!-- Sell Your Car Section Start -->
+<div class="container">
+    <div class="tab">
+
+        <!-- Vehicle Detail division start  -->
+
+        <ul class="nav nav-tabs">
+            <li>
+                <a id="vehicledetail" (click)="tabChange('vehicledetail')" data-toggle="tab" href="#usedVehicleDetail"
+                    aria-expanded="false">Vehicle Detail</a>
+            </li>
+
+            <li>
+                <a id="vehiclecondition" (click)="tabChange('vehiclecondition')" data-toggle="tab"
+                    href="#usedVehicleInfo" aria-expanded="false">Vehicle Condition</a>
+            </li>
+
+            <li>
+                <a id="sellerdetail" (click)="tabChange('sellerdetail')" data-toggle="tab" href="#vehicleCondition"
+                    aria-expanded="false">Seller Detail</a>
+            </li>
+
+            <li>
+                <a id="dealerdetail" (click)="tabChange('dealerdetail')" data-toggle="tab" href="#sellerInfo"
+                    aria-expanded="false">Dealer
+                    Detail</a>
+            </li>
+
+        </ul>
+
+        <div class="content">
+
+
+            <!-- Vehicle Detail division start -->
+            <div class="tab-pane theme-select2-design formInputDesign" *ngIf="id==='vehicledetail'">
+                <div class="column1">
+                    <div class="filter-field">
+                        <label>Exterior Color</label>
+                        <select class="search-filter" data-placeholder="Select Exterior Color">
+                            <option value="">Select Exterior Color</option>
+                            <option>Beige</option>
+                            <option>Black</option>
+                            <option>Blue</option>
+                            <option>Brown</option>
+                            <option>Copper</option>
+                            <option>Gold</option>
+                            <option>Gray</option>
+                            <option>Green</option>
+                            <option>Maroon</option>
+                            <option>Orange</option>
+                            <option>Purple</option>
+                            <option>Red</option>
+                            <option>Silver</option>
+                            <option>Tan</option>
+                            <option>White</option>
+                            <option>Yellow</option>
+                        </select>
+                    </div>
+                    <div class="second">
+                        <div class="filter-field">
+                            <label>Mileage (Plus or Minus 500)</label>
+                            <input class="form-control" type="text" name="mileage" placeholder="10000">
+                        </div>
+                    </div>
+                    <ul
+                        class="mt-3 mb-2 d-flex justify-content-between tab-content-btn list-unstyled col-12 col-ms-12 col-md-8">
+                        <li><button type="button" class="themeBtn-inverse prev-step"
+                                style="cursor: pointer;" routerLink="/mainpage/main">  Previous</button>
+                        </li>
+                        <li><button type="button" class="themeBtn next-step-child" style="cursor: pointer;"
+                                (click)="tabChange('vehiclecondition')">Next</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column2">
+                    <div class="used-vehicle-image-info text-right mb-2">
+                        <h1 class="pt-3">2018 Acura ILX</h1>
+                        <p class="mb-1"><b>Trim:</b> 4dr Sedan (2.4L 4cyl 8AM)</p>
+                        <a href="sellyourcar.html" class="colorPrimary"><u>Edit Vehicle</u></a>
+                    </div>
+
+                    <div class="used-vehicle-image-size">
+                        <img src="../../../assets/acura-ilx.png" class="img-fluid" alt="Acura" title="Acura">
+                    </div>
+                </div>
+            </div>
+            <!--vehicle detail division end -->
+
+
+            <!-- vehicle condition division start -->
+            <div class="vehicle-general-detail-nav-content tab-content" *ngIf="id==='vehiclecondition'">
+                <div class="column2">
+
+                    <div class="row carConditionDesign m-0">
+
+                        <div class="col-12 col-sm-12 col-md-12 pl-0">
+                            <h6>What is the condition of the car?</h6>
+
+                            <div class="carConditionDesign-inner">
+                                <div class="vehicleCondition-design customRadio-btn">
+                                    <label class="control-label" for="Great">
+                                        <input type="radio" checked="checked" name="radio" id="Great" />
+                                        <label class="checkmark"></label>
+                                        <span>Great</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design customRadio-btn">
+                                    <label class="control-label" for="Good">
+                                        <input type="radio" name="radio" id="Good" />
+                                        <label class="checkmark"></label>
+                                        <span>Good</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design customRadio-btn">
+                                    <label class="control-label" for="Fair">
+                                        <input type="radio" name="radio" id="Fair" />
+                                        <label class="checkmark"></label>
+                                        <span>Fair</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design customRadio-btn">
+                                    <label class="control-label" for="Poor">
+                                        <input type="radio" name="radio" id="Poor" />
+                                        <label class="checkmark"></label>
+                                        <span>Poor</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 p-0 pt-2">
+                            <div class="content-guideline-text">
+                                <button data-toggle="modal" data-target="#carCondition-Guideline" type="button"
+                                    class=""><span><i class="fa fa-exclamation-circle"> </i> </span>
+                                    Condition Guidelines</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row carConditionDesign m-0">
+                        <div class="col-12 col-sm-12 col-md-12 pl-0">
+                            <h6>Are there any active warning lights?</h6>
+
+                            <div class="carConditionDesign-inner">
+                                <div class="vehicleCondition-design customRadio-btn">
+                                    <label class="control-label" for="Yes">
+                                        <input type="radio" checked="checked" name="Yes" id="Yes" />
+                                        <label class="checkmark"></label>
+                                        <span>Yes</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design customRadio-btn">
+                                    <label class="control-label" for="No">
+                                        <input type="radio" name="Yes" id="No" />
+                                        <label class="checkmark"></label>
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row carConditionDesign m-0">
+                        <div class="col-12 col-sm-12 col-md-12 pl-0">
+                            <h6>Has your car ever been in an accident?</h6>
+
+                            <div class="carConditionDesign-inner">
+                                <div class="vehicleCondition-design customRadio-btn">
+                                    <label class="control-label" for="Yes1">
+                                        <input type="radio" checked="checked" name="Yes1" id="Yes1" />
+                                        <label class="checkmark"></label>
+                                        <span>Yes</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design customRadio-btn">
+                                    <label class="control-label" for="No1">
+                                        <input type="radio" name="Yes1" id="No1" />
+                                        <label class="checkmark"></label>
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row carConditionDesign m-0">
+                        <div class="col-12 col-sm-12 col-md-12 pl-0">
+                            <h6>Is your vehicle currently on any active loan or lease?</h6>
+
+                            <div class="carConditionDesign-inner">
+                                <div class="vehicleCondition-design customRadio-btn loanBtn">
+                                    <label class="control-label vehicleCondition-loan" for="Loan">
+                                        <input type="radio" name="loan" id="Loan" data-target="#lease_input" />
+                                        <label class="checkmark"></label>
+                                        <span>Loan</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design customRadio-btn loanBtn">
+                                    <label class="control-label vehicleCondition-loan" for="Lease">
+                                        <input type="radio" name="loan" id="Lease" data-target="#lease_input" />
+                                        <label class="checkmark"></label>
+                                        <span>Lease</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design customRadio-btn loanBtn">
+                                    <label class="control-label" for="None1">
+                                        <input type="radio" checked="checked" name="loan" id="None1" />
+                                        <label class="checkmark"></label>
+                                        <span>None</span>
+                                    </label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="content-guideline-text">
+                            <button data-toggle="modal" data-target="#carCondition-Guideline" type="button"
+                                class=""><span><i class="fa fa-exclamation-circle"> </i> </span>
+                            </button>
+
+                            Why we need this?
+                        </div>
+
+                    </div>
+
+                    <div class="row carConditionDesign m-0">
+                        <div class="col-12 col-sm-12 col-md-12 pl-0">
+                            <div class="carConditionDesign-inner">
+                                <div class="vehicleCondition-design customRadio-btn">
+                                    <label class="control-label" for="1">
+                                        <input type="radio" checked="checked" name="keys" id="1" />
+                                        <label class="checkmark"></label>
+                                        <span>1</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design customRadio-btn">
+                                    <label class="control-label" for="2">
+                                        <input type="radio" name="keys" id="2" />
+                                        <label class="checkmark"></label>
+                                        <span>2</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row carConditionDesign m-0">
+                        <div class="col-12 col-sm-12 col-md-12 pl-0">
+                            <h6>Any Damage?</h6>
+
+                            <div class="carConditionDesign-inner pb-2">
+                                <div class="vehicleCondition-design Customcheck-box">
+                                    <label class="control-label" for="Front">
+                                        <input type="checkbox" checked="checked" name="Front" id="Front" />
+                                        <label class="checkmark"></label>
+                                        <span>Front</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design Customcheck-box">
+                                    <label class="control-label" for="Rear">
+                                        <input type="checkbox" name="Rear" id="Rear" />
+                                        <label class="checkmark"></label>
+                                        <span>Rear</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design Customcheck-box">
+                                    <label class="control-label" for="Left">
+                                        <input type="checkbox" name="Left" id="Left" />
+                                        <label class="checkmark"></label>
+                                        <span>Left</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design Customcheck-box">
+                                    <label class="control-label" for="Right">
+                                        <input type="checkbox" name="Right" id="Right" />
+                                        <label class="checkmark"></label>
+                                        <span>Right</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design Customcheck-box">
+                                    <label class="control-label" for="Engine">
+                                        <input type="checkbox" name="Engine" id="Engine" />
+                                        <label class="checkmark"></label>
+                                        <span>Engine</span>
+                                    </label>
+                                </div>
+
+                                <div class="vehicleCondition-design Customcheck-box">
+                                    <div class="vehicleCondition-design Customcheck-box">
+                                        <label class="control-label" for="None">
+                                            <input type="checkbox" name="None" id="None" />
+                                            <label class="checkmark"></label>
+                                            <span>None</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="mt-5 mb-3 pr-3 d-flex justify-content-between tab-content-btn list-unstyled">
+                        <li><button type="button" class="themeBtn-inverse prev-step"style="cursor: pointer;"
+                            (click)="tabChange('vehicledetail')">Previous</button>
+                        </li>
+                        <li><button type="button" class="themeBtn next-step-child" style="cursor: pointer;"
+                                (click)="tabChange('sellerdetail')">Next</button>
+                    </ul>
+
+                    <div class="col-12 col-sm-12 col-md-4 d-flex align-items-end justify-content-center flex-column">
+                        <div class="used-vehicle-image-info text-right mb-2">
+                            <h1 class="pt-3">2018 Acura ILX</h1>
+                            <p class="mb-1"><b>Trim:</b> 4dr Sedan (2.4L 4cyl 8AM)</p>
+                            <a href="sellyourcar.html" class="colorPrimary"><u>Edit Vehicle</u></a>
+                        </div>
+
+                        <div class="used-vehicle-image-size">
+                            <img src="../../../assets/acura-ilx.png" class="img-fluid" alt="Acura" title="Acura">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- vehicle condition division end-->
+
+
+            <!-- seller detail start from here-->
+            <div class="vehicle-general-detail-nav-content tab-content" *ngIf="id==='sellerdetail'">
+                <div class="column3">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <div class="filter-field">
+                                <label style="font-weight:700;">Enter Zipcode (Car Registered)</label>
+                                <input class="form-control" type="text" name="zipcode" placeholder="93111">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="filter-field">
+                                <label style="font-weight:700;">First Name</label>
+                                <input class="form-control" type="text" name="firstname" placeholder="John">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="filter-field">
+                                <label style="font-weight:700;">Last Name</label>
+                                <input class="form-control" type="text" name="lastname" placeholder="Wik">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="filter-field">
+                                <label style="font-weight:700;">Email</label>
+                                <input class="form-control" type="text" name="email" placeholder="john@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="filter-field">
+                                <label style="font-weight:700;">Phone Number</label>
+                                <input class="form-control" type="text" name="phonenumber" placeholder="(987) 654 3210">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <div class="filter-field">
+                                <label style="font-weight:700;">Preferred Way To Contact You</label>
+
+
+                                <div class="d-flex">
+                                    <div class="customRadio-btn">
+                                        <label class="control-label" for="text">
+                                            <input type="radio" checked="checked" name="contact" id="text" />
+                                            <label class="checkmark"></label>
+                                            <span>text</span>
+                                        </label>
+                                    </div>
+                                    <div class="customRadio-btn">
+                                        <label class="control-label" for="Call">
+                                            <input type="radio" name="contact" id="Call" />
+                                            <label class="checkmark"></label>
+                                            <span>Call</span>
+                                        </label>
+                                    </div>
+                                    <div class="customRadio-btn">
+                                        <label class="control-label" for="Email">
+                                            <input type="radio" name="contact" id="Email" />
+                                            <label class="checkmark"></label>
+                                            <span>Email</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="Customcheck-box personalInfo-box verifyBox">
+                                    <label class="control-label" for="verify">
+                                        <input type="checkbox" id="verify" />
+                                        <label for="verify"></label>
+                                        <span>I verify that the above listed contact information belongs to me and I
+                                            give my consent to receive automated and pre-recorded voice calls,
+                                            including
+                                            Text Messages related to my vehicle and in accordance with the ongoing
+                                            deal.
+                                            *Message and Data rates may apply. Reply “Stop” to terminate the
+                                            communication.</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="mt-5 mb-3 pr-3 d-flex justify-content-between tab-content-btn list-unstyled">
+                        <li><button type="button" class="themeBtn-inverse prev-step" style="cursor: pointer;"
+                            (click)="tabChange('vehiclecondition')">Previous</button>
+                        </li> 
+                        <li><button type="button" class="themeBtn next-step-child" style="cursor: pointer;"
+                                (click)="tabChange('dealerdetail')">Next</button>
+                    </ul>
+
+                    <div class="col-12 col-sm-12 col-md-4 d-flex align-items-end justify-content-center flex-column">
+                        <div class="used-vehicle-image-info text-right mb-2">
+                            <h1 class="pt-3">2018 Acura ILX</h1>
+                            <p class="mb-1"><b>Trim:</b> 4dr Sedan (2.4L 4cyl 8AM)</p>
+                            <a href="sellyourcar.html" class="colorPrimary"><u>Edit Vehicle</u></a>
+                        </div>
+
+                        <div class="used-vehicle-image-size">
+                            <img src="../../../assets/acura-ilx.png" class="img-fluid" alt="Acura" title="Acura">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- seller detail end from here-->
+
+
+            <!-- Dealer Detail start from here -->
+            <div class="vehicle-general-detail-nav-content tab-content" *ngIf="id==='dealerdetail'">
+  
+                <div class="column4">
+                    <div class="sell-carDealer">
+                        <h4 class="text-left">Select Dealers</h4>
+                        <p class="mt-1">Recommended: select multiple dealers to get the best deal!</p>
+
+                        <div class="select-carDealer p-0">
+                            <div class="check-filter Customcheck-box">
+                                <label class="control-label" for="dealer1">
+                                    <input type="checkbox" id="dealer1" />
+                                    <label for="dealer1"></label>
+
+                                    <div>
+                                        <span class="select-carDealer-name">Kearny Mesa Acura</span>
+                                        <span class="select-carDealer-address">San Diego , California 87402 (2
+                                            miles)</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="check-filter Customcheck-box">
+                                <label class="control-label" for="dealer2">
+                                    <input type="checkbox" id="dealer2" />
+                                    <label for="dealer2"></label>
+
+                                    <div>
+                                        <span class="select-carDealer-name">Ball Acura</span>
+                                        <span class="select-carDealer-address">National City 87402, California 87402 (11
+                                            miles)</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="check-filter Customcheck-box">
+                                <label class="control-label" for="dealer3">
+                                    <input type="checkbox" id="dealer3" />
+                                    <label for="dealer3"></label>
+
+                                    <div>
+                                        <span class="select-carDealer-name">Acura Of Escondido</span>
+                                        <span class="select-carDealer-address">Escondido , California 87402(22
+                                            miles)</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="check-filter Customcheck-box">
+                                <label class="control-label" for="dealer4">
+                                    <input type="checkbox" id="dealer4" />
+                                    <label for="dealer4"></label>
+
+                                    <div>
+                                        <span class="select-carDealer-name">Hoehn Acura</span>
+                                        <span class="select-carDealer-address">carlsbad , California 87402(24
+                                            miles)</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="check-filter Customcheck-box">
+                                <label class="control-label" for="dealer5">
+                                    <input type="checkbox" id="dealer5" />
+                                    <label for="dealer5"></label>
+
+                                    <div>
+                                        <span class="select-carDealer-name">Dch Acura Of Temecula</span>
+                                        <span class="select-carDealer-address">Temecula , California 87402 (49
+                                            miles)</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="mt-3 d-flex justify-content-between list-unstyled">
+                        <li><button type="button" class="themeBtn-inverse prev-step-child" style="cursor: pointer;"
+                            (click)="tabChange('sellerdetail')"> Previous</button></li>
+                        <li><button data-toggle="modal" data-target="#successModalCenter" type="button"
+                                class="themeBtn next-step-child">Complete</button></li>
+                    </ul>
+
+                    <div class="col-12 col-sm-12 col-md-4 d-flex align-items-end justify-content-center flex-column">
+                        <div class="used-vehicle-image-info text-right mb-2">
+                            <h1 class="pt-3">2018 Acura ILX</h1>
+                            <p class="mb-1"><b>Trim:</b> 4dr Sedan (2.4L 4cyl 8AM)</p>
+                            <a href="sellyourcar.html" class="colorPrimary"><u>Edit Vehicle</u></a>
+                        </div>
+
+                        <div class="used-vehicle-image-size">
+                            <img src="images/acura-ilx.png" class="img-fluid" alt="Acura" title="Acura">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dealer Detail end from here -->
+
+        </div>
+    </div>
+</div>
+<router-outlet> </router-outlet>

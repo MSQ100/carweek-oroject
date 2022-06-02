@@ -1,0 +1,387 @@
+
+  
+  /* for button css*/
+  .themeBtn,
+  .themeBtn-inverse {
+    display: inline-block;
+    padding: 12px 15px;
+    min-width: 160px;
+    background-color: #1451b5;
+    color: #fff;
+    border: 1px solid #1451b5;
+    border-radius: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    letter-spacing: 1px;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    font-size: 15px;
+    font-weight: 700;
+   
+  }
+  
+  .themeBtn:before, .themeBtn:after,
+  .themeBtn-inverse:before,
+  .themeBtn-inverse:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-radius: 5;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  
+  .themeBtn:after,
+  .themeBtn-inverse:after {
+    left: unset;
+    right: 0;
+  }
+  
+  .themeBtn:hover, .themeBtn:focus,
+  .themeBtn-inverse:hover,
+  .themeBtn-inverse:focus {
+    border: 1px solid #1451b5;
+    color: #1451b5;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  .themeBtn:hover::before, .themeBtn:hover:after, .themeBtn:focus::before, .themeBtn:focus:after,
+  .themeBtn-inverse:hover::before,
+  .themeBtn-inverse:hover:after,
+  .themeBtn-inverse:focus::before,
+  .themeBtn-inverse:focus:after {
+    width: 51%;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  
+  .themeBtn-inverse {
+    background: #fff;
+    color: #1451b5 !important;
+  }
+  
+  .themeBtn-inverse:before, .themeBtn-inverse:after {
+    background-color: #1451b5;
+    border-color: #1451b5;
+  }
+  
+  .themeBtn-inverse:hover, .themeBtn-inverse:focus {
+    border: 1px solid #1451b5;
+    color: #fff !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mt-3{
+gap:330px;
+  }
+  /* -------------------------------- select option in arror sign for css. Select2 Design ---------------------*/
+  .theme-select2-design select {
+    color: #444;
+    padding-left: 11px;
+    padding-right: 30px;
+    display: inline-block;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../../../assets/drop-down.png") #fff;
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 12px 12px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #d4d7d9;
+  }
+  
+  .theme-select2-design .select2.select2-container.select2-container--default {
+    width: 100% !important;
+  }
+  
+  .theme-select2-design .select2-container .select2-selection--single {
+    height: 45px;
+    border: 0px;
+    border-radius: 0px;
+    outline: none;
+  }
+  
+  .theme-select2-design .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 45px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 30px;
+    color: #444;
+    border: 1px solid #d4d7d9;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .theme-select2-design .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 45px;
+    right: 5px;
+  }
+  
+  .theme-select2-design .select2-results__option {
+    font-size: 13px;
+    padding: 10px;
+  }
+  
+  .theme-select2-design .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #000;
+  }
+  
+  .theme-select2-design .inputFields {
+    font-size: 14px;
+    color: #191919;
+    height: 40px;
+  }
+  
+  .theme-select2-design .inputFields:focus {
+    border: 1px solid #ccc;
+  }
+  
+  .theme-select2-design .inputFields::-webkit-input-placeholder {
+    font-size: 13px;
+  }
+  
+  .theme-select2-design .inputFields:-ms-input-placeholder {
+    font-size: 13px;
+  }
+  
+  .theme-select2-design .inputFields::-ms-input-placeholder {
+    font-size: 13px;
+  }
+  
+  .theme-select2-design .inputFields::placeholder {
+    font-size: 13px;
+  }
+  
+  .theme-select2-design .inputFields-textarea {
+    font-size: 14px;
+    color: #191919;
+  }
+  
+  .theme-select2-design .inputFields-textarea::-webkit-input-placeholder {
+    font-size: 13px;
+  }
+  
+  .theme-select2-design .inputFields-textarea:-ms-input-placeholder {
+    font-size: 13px;
+  }
+  
+  .theme-select2-design .inputFields-textarea::-ms-input-placeholder {
+    font-size: 13px;
+  }
+  
+  .theme-select2-design .inputFields-textarea::placeholder {
+    font-size: 13px;
+  }
+  
+  .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #1451b5 !important;
+  }
+  
+  .select2-dropdown {
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .select2-search--dropdown {
+    padding: 0 10px;
+  }
+  
+  .select2-results__options {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px 10px;
+  }
+  
+  .select2-results__options .select2-results__option {
+    padding: 10px;
+  }
+  
+  .select2-container--default .select2-search--dropdown .select2-search__field[type=search] {
+    border: 1px solid #aaa;
+    margin: 10px 0;
+    height: 40px;
+    outline-offset: 0;
+  }
+  
+  .theme-find-dealer .filter-field::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 1px;
+    background: #ccc;
+    height: 50px;
+    top: 2px;
+  } 
+  
+  @media (max-width: 767px) {
+      .nav-tabs li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+      .nav-tabs li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+  
+  .nav-tabs li > a {
+    font-size: 15px;
+    min-width: 115px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media (max-width: 767px) {
+    .nav-tabs li > a {
+      background-color: #f9f9f9;
+      min-width: 115px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .vehicle-general-detail-nav .nav-tabs li > a {
+      background-color: #f9f9f9;
+      min-width: 115px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+  .vehicle-general-detail-nav .nav-tabs li > a {
+      background-color: #f9f9f9;
+      min-width: 115px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  
+   .nav-tabs li > a.active {
+    border-radius: 20px;
+    background-color: #f3f6fe;
+    color: #1451b5;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+  @media (max-width: 767px) {
+   .vehicle-general-detail-nav .nav-tabs li > a.active {
+      border-radius: 0;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+     .vehicle-general-detail-nav .nav-tabs li > a.active {
+      border-radius: 0;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+     .nav-tabs li > a.active {
+      border-radius: 0;
+    }
+  }
+  
+   .nav-tabs li > a.active::after {
+    width: 0;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+ 
+ 
+  
+ 
+  
+  .nav-tabs {
+    border-bottom: 0px solid #dee2e6 !important;
+  }
+  
+    .nav-tabs li > a {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px;
+    color: #191919;
+    display: block;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (max-width: 767px) {
+     .nav-tabs li > a {
+      padding: 10px 5px;
+    }
+  }
+  
+   .nav-tabs li > a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    height: 3px;
+    width: 0;
+    background-color: #1451b5;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    z-index: -1;
+    border-radius: 10px;
+  }
+    .nav-tabs li > a.active {
+    color: #1451b5;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+.nav-tabs li > a.active::after {
+    width: 100%;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+   .filter-field {
+    margin: 8px 0 15px;
+  }
+  
+   
+
+  /*Vehicle detail end*/
+  .column1{
+      float: left;
+      width:700px;
+      padding:15px;
+      border: solid 1px #fff;
+  }
+  .column2{
+      float: left;
+      width:300px;
+      padding:15px;
+      margin-left: 100px;
+      border: solid 1px #fff;
+  }
+/* now */

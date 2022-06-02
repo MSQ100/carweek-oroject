@@ -1,0 +1,262 @@
+.used-car-section {
+    position:relative;
+  }
+  
+  .used-car-section .used-car-section-inner {
+    background-color: #fff;
+    max-width: 725px;
+    width: 100%;
+    border-top: 4px solid #1451b5;
+    margin-left: 20px;
+  }
+  
+  .used-car-section .value-your-trade-section-inner {
+    position: relative;
+  }
+  
+  .used-car-section .value-your-trade-section-inner .used-car-wrapper,
+  .used-car-section .value-your-trade-section-inner .vehicle-general-detail-wizard {
+    background-color: #fff;
+    max-width: 725px;
+    width: 100%;
+    border-top: 4px solid #1451b5;
+  }
+  
+  .used-car-section .value-your-trade-section-inner .tab-content-btn {
+    max-width: 725px;
+    width: 100%;
+  }
+  
+  .used-car-section h1 {
+    font-size: 28px;
+  }
+  
+  @media (max-width: 767px) {
+    .used-car-section h1 {
+      font-size: 20px;
+    }
+  }
+  
+  .used-car-section .used-car-wrapper {
+    border: solid 1px rgba(225, 225, 225, 0.6);
+    background-color: #fff;
+    padding: 15px 25px 5px;
+  }
+  
+  .used-car-section .used-car-nav .nav-tabs {
+    border-bottom: 0px solid #dee2e6 !important;
+  }
+  
+  .used-car-section .used-car-nav .nav-tabs li > a {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px;
+    color: #191919;
+    display: block;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .used-car-section .used-car-nav .nav-tabs li > a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    height: 3px;
+    width: 0;
+    background-color: #1451b5;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    z-index: -1;
+    border-radius: 10px;
+  }
+  
+  .used-car-section .used-car-nav .nav-tabs li > a.active {
+    color: #1451b5;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+  .used-car-section .used-car-nav .nav-tabs li > a.active::after {
+    width: 100%;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+  .used-car-section .used-car-nav-content {
+    padding: 20px 0px;
+  }
+  
+  .used-car-section .used-car-nav-content p {
+    margin-top: 5px;
+    line-height: 1.25;
+    font-size: 13px;
+  }
+  
+  .used-car-section .padding-10 {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
+  
+  .used-car-section .filter-field {
+    margin: 10px 0;
+  }
+  
+  .used-car-section #searchVIN input {
+    border: 1px solid #d4d7d9;
+    height: 45px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: #000;
+  }
+  
+  .used-car-section .used-vehicle-image-info {
+    display: none;
+  }
+  
+  .used-car-section .used-vehicle-image-size {
+    position: relative;
+    text-align: center;
+    height: 195px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 120px;  
+  }
+  
+/* for button effect css*/
+.themeBtn,
+.themeBtn-inverse {
+  display: inline-block;
+  padding: 12px 15px;
+  min-width: 160px;
+  background-color: #1451b5;
+  color: #fff;
+  border: 1px solid #1451b5;
+  border-radius: 7px;
+  text-transform: capitalize;
+  text-align: center;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  letter-spacing: 1px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .themeBtn,
+  .themeBtn-inverse {
+    padding: 10px 10px;
+    min-width: 100px;
+    font-size: 13px;
+  }
+}
+
+.themeBtn:before, .themeBtn:after,
+.themeBtn-inverse:before,
+.themeBtn-inverse:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 5;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.themeBtn:after,
+.themeBtn-inverse:after {
+  left: unset;
+  right: 0;
+}
+
+.themeBtn:hover, .themeBtn:focus,
+.themeBtn-inverse:hover,
+.themeBtn-inverse:focus {
+  border: 1px solid #1451b5;
+  color: #1451b5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.themeBtn:hover::before, .themeBtn:hover:after, .themeBtn:focus::before, .themeBtn:focus:after,
+.themeBtn-inverse:hover::before,
+.themeBtn-inverse:hover:after,
+.themeBtn-inverse:focus::before,
+.themeBtn-inverse:focus:after {
+  width: 51%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.themeBtn-inverse {
+  background: #fff;
+  color: #1451b5 !important;
+}
+
+.themeBtn-inverse:before, .themeBtn-inverse:after {
+  background-color: #1451b5;
+  border-color: #1451b5;
+}
+
+.themeBtn-inverse:hover, .themeBtn-inverse:focus {
+  border: 1px solid #1451b5;
+  color: #fff !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* select option css  */
+  /* new */
+.theme-select2-design select {
+    color: #444;
+    padding-left: 11px;
+    padding-right: 30px;
+    display: inline-block;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../../../assets/drop-down.png") #fff;
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 12px 12px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #d4d7d9;
+  }
+  
+  @media (max-width: 767px) {
+    .used-car-section .used-vehicle-image-size {
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .d-flex.tab-content-btn li {
+      margin: 0 1px;
+    }
+  }

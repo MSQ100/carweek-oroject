@@ -1,0 +1,138 @@
+<!-- Sell Your Car Section Start -->
+<section class="used-car-section pt-5 pb-5">
+    <div class="container-mid">
+        <div class="row">
+            <!-- left side div like form-->
+            <div class="col-12 col-sm-12 col-md-8">
+                <div class="used-car-section-inner wizard">
+                    <div class="wizard-inner">
+                        <ul class="nav nav-tabs d-none" role="tablist">
+                            <li role="presentation" class="nav-item">
+                                <a href="#step1" class="nav-link active" data-toggle="tab" aria-controls="step1"
+                                    role="tab" title="Step 1"> 1 </a>
+                            </li>
+                            <li role="presentation" class="nav-item">
+                                <a href="#complete" class="nav-link disabled" data-toggle="tab" aria-controls="step2"
+                                    role="tab" title="Step 2"> 2 </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form role="form">
+                        <div class="tab-content">
+                            <div class="tab-pane active" role="tabpanel" id="step1">
+                                <div class="used-car-wrapper">
+                                    <div class="used-car-nav tab-options">
+                                        <ul class="nav nav-tabs">
+                                            <li class="">
+                                                <a class="active pl-0" data-toggle="tab" href="#searchMakeModel" aria-expanded="false">Make/Model</a>
+                                            </li>
+
+                                            <li class="">
+                                                <a class="" data-toggle="tab" href="#searchVIN" aria-expanded="false">VIN</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="used-car-nav-content tab-content">
+                                        <div id="searchMakeModel" class="tab-pane theme-select2-design active">
+                                            <h5>Enter Your Vehicle Information</h5>
+                                            <p>We recommend entering your VIN or by searching make or model With that,
+                                                we can give you an instant cash offer in most cases.</p>
+
+                                            <div class="row">
+
+                                                <div class="col-12 col-sm-12 col-md-12">
+                                                    <div class="filter-field">
+                                                        <select class="search-filter" data-placeholder="Select Make">
+                                                            <option value="">Select Make</option>
+                                                            <option value="Acura">Acura</option>
+                                                            <option value="AlfaRomeo">Alfa Romeo</option>
+                                                            <option value="AstonMartin">Aston Martin</option>
+                                                            <option value="BMW">BMW</option>
+                                                            <option value="Buick">Buick</option>
+                                                            <option value="Mazda">Mazda</option>
+                                                            <option value="Mercedes">Mercedes</option>
+                                                            <option value="Volvo">Volvo</option>
+                                                            <option value="Volkswagen">Volkswagen</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-sm-12 col-md-12">
+                                                    <div class="filter-field">
+                                                        <select class="search-filter" data-placeholder="Select Model">
+                                                            <option value="">Select Model</option>
+                                                            <option value="ilx">ILX</option>
+                                                            <option value="mdx">MDX</option>
+                                                            <option value="tlx">TLX</option>
+                                                            <option value="tx">TX</option>
+                                                            <option value="rdx">RDX</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-sm-12 col-md-12">
+                                                    <div class="filter-field">
+                                                        <select class="search-filter" data-placeholder="Select Year">
+                                                            <option value="">Select Year</option>
+                                                            <option value="2020">2020</option>
+                                                            <option value="2019">2019</option>
+                                                            <option value="2018">2018</option>
+                                                            <option value="2017">2017</option>
+                                                            <option value="2016">2016</option>
+                                                            <option value="2015">2015</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-sm-12 col-md-12">
+                                                    <div class="filter-field">
+                                                        <select class="search-filter" data-placeholder="Select Trim">
+                                                            <option value="">Select Trim</option>
+                                                            <option>Base/Unknown</option>
+                                                            <option>w/Premium Package</option>
+                                                            <option>w/Premium Pkg</option>
+                                                            <option>w/Premium/A-Spec Package</option>
+                                                            <option>w/Technology Plus Pkg</option>
+                                                            <option>w/Technology Plus/A-SPEC Pkg</option>
+                                                            <option>w/Technology/A-Spec Package</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="searchVIN" class="tab-pane theme-select2-design">
+                                            <h5>Enter Your Vehicle Information</h5>
+                                            <p>We recommend entering your VIN or by searching make or model With that,
+                                                we can give you an instant cash offer in most cases.</p>
+
+                                            <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12">
+                                                    <input class="form-control" type="text" name="vin"
+                                                        placeholder="Ex: 1GCCW80H7CR161832">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                  <ul class="mt-3 d-flex justify-content-end list-unstyled">
+                                    <li> <a class="" routerLink="sellcar">  <button type="button" id="carDetailBtn" class="themeBtn next-step">Next</button> </a>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+             <!-- right side div like car image-->
+              <div class="col-12 col-sm-12 col-md-4 d-flex align-items-end justify-content-center flex-column">
+                <div class="used-vehicle-image-size">
+                    <img src="../../../assets/acura-ilx.png" class="img-fluid" alt="Acura" title="Acura">
+                </div>
+               </div>
+        </div>
+    </div>
+</section>
+<router-outlet> </router-outlet>
+
